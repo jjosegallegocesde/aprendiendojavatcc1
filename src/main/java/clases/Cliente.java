@@ -4,16 +4,23 @@ public class Cliente {
 
     //ATRIBUTOS
     public String nombre;
-    String cedula;
-    byte edad;
-    String telefono;
-    boolean aplicaDescuento;
+    public String cedula;
+    public int edad;
+    public String telefono;
+    public boolean aplicaDescuento;
 
     //CONSTRUCTOR
 
     public Cliente(){
     }
 
+    public Cliente(String nombre, String cedula, int edad, String telefono, boolean aplicaDescuento) {
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.edad = edad;
+        this.telefono = telefono;
+        this.aplicaDescuento = aplicaDescuento;
+    }
 
     //METODO
     public String saludar(){
